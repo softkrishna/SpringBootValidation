@@ -28,7 +28,7 @@ public List<User> getAll(){
 }
 public User getUser(int id) throws UsernotFoundException {
 	User user=userRepo.findByUserId(id);
-	if(user!=null) {
+	if(user!=null){
 	return user;
 	}
 	else {
